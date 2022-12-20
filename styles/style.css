@@ -280,3 +280,63 @@
   height: 636px;
   right: -124px;
 }
+
+.footer {
+  display: flex;
+  position: relative;
+  margin: 60px auto 40px auto;
+  background-color: #1F1F1F;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.footer__columns {
+  width: 90%;
+  min-height: 350px;
+  margin: 60px auto 40px auto;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  border: 1px solid red;
+}
+
+.footer__column_content_about {
+
+}
+
+.footer__column_content_social {
+
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+  top: 0px;
+  left: 0px;
+}
+
+.footer__author {
+  position: absolute;
+  bottom: 18px;
+  color: white;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+
+}
+
+.footer__list {
+
+}
+
+.footer__column-link {
+
+}
+
+.footer__social-icons {
+
+}
