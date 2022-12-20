@@ -55,7 +55,13 @@
 }
 
 .header__square {
-
+  position: absolute;
+  width: 568px;
+  height: 568px;
+  right: 0px;
+  top: 64px;
+  background-color: #2F80ED;
+  z-index: -1;
 }
 
 
