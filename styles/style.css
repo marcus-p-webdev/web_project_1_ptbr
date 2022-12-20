@@ -32,12 +32,18 @@
 
 .header__title {
   width: 730px;
+  height: 96px;
+  font-size: 102px;
+  font-weight: bold;
   margin-left: 64px;
 }
 
 .header__subtitle {
-  width: 388px;
   position: absolute;
+  width: 388px;
+  height: 25px;
+  font-size: 18px;
+  font-weight: normal;
   bottom: 30px;
   left: 64px;
 }
@@ -54,7 +60,7 @@
   right: 0px;
 }
 
-.header__square {
+.header__square-pic {
   position: absolute;
   width: 568px;
   height: 568px;
@@ -64,13 +70,34 @@
   z-index: -1;
 }
 
-
-
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.two-columns {
+  display: flex;
+  min-height: 784px;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  top: 100px;
+  bottom: 100px;
 }
+
+.two-columns__brief {
+
+}
+
+.two-columns__main-text {
+
+}
+
+.two-columns__paragraph {
+
+}
+
+.two-columns__span-accent {
+
+}
+
+
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
