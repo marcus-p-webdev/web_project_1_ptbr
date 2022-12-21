@@ -284,53 +284,62 @@
 .footer {
   background-color: black;
   margin-top: 100px;
-  border: 1px solid red;
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 .footer__columns {
   display: flex;
   justify-content: space-between;
-  margin: 100px auto 60px;
+  margin: auto;
   width: 90%;
   min-height: 350px;
+  border: 1px solid white;
 }
 
 .footer__column_content_copyright {
+  display: flex;
+  position: relative;
   flex-basis: 711px;
-  width: 100px;
-  height: 100px;
-  background-color: red;
 }
 
 .footer__column_content_about {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
+  display: flex;
+  position: relative;
+  row-gap: 20px;
+  border: 1px solid white;
 }
 
 .footer__column_content_social {
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
+  border: 1px solid white;
 }
 
 .logo_place_footer {
-
+  width: 183px;
+  height: 35px;
 }
 
 .footer__author {
+  position: absolute;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   bottom: 18px;
+  color: white;
 }
 
 .footer__column-heading {
-
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .footer__list {
-
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .footer__column-link {
