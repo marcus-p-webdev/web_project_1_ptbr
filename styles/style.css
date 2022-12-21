@@ -174,7 +174,7 @@
 .feynman__title {
   text-align: center;
   width: 775px;
-  height: 1.15;
+  line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
   top: 100px;
@@ -282,47 +282,47 @@
 }
 
 .footer {
-  display: flex;
-  position: relative;
-  margin: 60px auto 40px auto;
-  background-color: #1F1F1F;
-  justify-content: space-between;
+  background-color: black;
+  margin-top: 100px;
   border: 1px solid red;
 }
 
 .footer__columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto 60px;
   width: 90%;
   min-height: 350px;
-  margin: 60px auto 40px auto;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 
 .footer__column_content_about {
-
+  width: 100px;
+  height: 100px;
+  background-color: blue;
 }
 
 .footer__column_content_social {
-
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
 }
 
 .logo_place_footer {
-  width: 183px;
-  height: 35px;
-  top: 0px;
-  left: 0px;
+
 }
 
 .footer__author {
-  position: absolute;
-  bottom: 18px;
-  color: white;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  bottom: 18px;
 }
 
 .footer__column-heading {
