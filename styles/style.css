@@ -334,7 +334,7 @@
 /*  margin-top: 100px; "remova esta propriedade" */
   padding-top: 60px; /*correção*/
   padding-bottom: 40px; /*correção*/
-  box-sizing: 90%; /* --é este mesmo o valor?-- */
+  min-height: 350px; /* --isto que quis dizer com box-sizing ou quer dizer a propriedade?-- */
 }
 
 .footer__columns {
