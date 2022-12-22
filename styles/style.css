@@ -51,7 +51,8 @@
 }
 
 .header__link {
-  color: #2F80ED;
+  text-decoration: #2F80ED;
+  /*qual display?*/
 }
 
 .header__main-illustration {
@@ -73,12 +74,17 @@
   z-index: 0;
 }
 
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin */
+}
+
 .two-columns {
   display: flex;
-  position: relative;
   justify-content: space-between;
   width: 80%;
-  margin: 100px auto 100px auto;
 }
 
 .two-columns__brief {
@@ -87,20 +93,25 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin: 0px 0px 0px 0px;
   color: #2F80ED;
 }
 
 .two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* ver essa prop */
   width: 80%;
   min-width: 784px;
-  text-indent: 0px;
+  /* quer dizer text-indent: 0px;? */
+
 }
 
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0 auto 30px auto;
+  margin: 0px; /* rever se funciona */
 }
 
 .two-columns__span-accent {
@@ -113,10 +124,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  margin-top: 100px;
+  margin-bottom: 100px; /*correção*/
 }
 
 .section-title {
@@ -125,7 +133,8 @@
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px; /*correção*/
 }
 
 .section-subtitle {
@@ -134,21 +143,21 @@
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 0px; /*correção*/
 }
 
 .table {
   display: flex;
-  position: relative;
+  /*position: relative;*/ /*correção*/
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
+  padding: 0px;
+  margin: 60px 0 0 0; /*correção*/
 }
 
 .table__cell {
-  margin-bottom: 60px;
   width: 250px;
-  height: auto;
   list-style-type: none;
 }
 
@@ -156,11 +165,11 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin: 0 auto auto 0;
+  margin: 0; /*correção*/
 }
 
 .cell__text {
-  margin: 20px auto 0px auto;
+  margin: 20px 0px 0px; /*correção*/
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -172,6 +181,8 @@
   flex-direction: column;
   height: 790px;
   align-items: center;
+  background-color: #F2F2F2; /*correção*/
+  padding-top: 100px;
 }
 
 .feynman__title {
@@ -180,15 +191,15 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  top: 100px;
+  margin-bottom: 70px; /*correção*/
 }
 
 .feynman__subtitle {
   height: 51px;
   font-size: 36px;
   font-weight: normal;
-  top: 170px;
   text-align: center;
+  margin: 0; /*correção*/
 }
 
 .feynman__link {
@@ -198,6 +209,8 @@
   height: 51px;
   font-size: 36px;
   font-weight: normal;
+  color: #2F80ED; /*correção*/
+  text-decoration: #2F80ED; /*correção*/
 }
 
 .feynman__image {
@@ -217,39 +230,37 @@
   position: relative;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
+  padding-top: 90px; /*correção*/
+  padding-bottom: 90px; /*correção*/
   overflow: hidden;
   background-color: #1F1F1F;
 }
 
 .section-title_theme_dark {
-  width: 60%;
+  color: white;
+  /*width: 60%;
   line-height: 1.15;
   font-size: 60px;
-  color: white;
   font-weight: bold;
   text-align: center;
   margin-top: 90px;
-  margin-bottom: 20px;
+  margin-bottom: 20px;*/ /*correção*/
 }
 
 .section-subtitle_theme_dark {
-  width: 60%;
+  color: white;
+  /* width: 60%;
   line-height: 34px;
   font-size: 24px;
   color: white;
   font-weight: normal;
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 0px;*/ /*correção*/
 }
 
 .table_theme_dark {
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1100px;
-  margin: 0 auto 90px auto;
+  row-gap: 20px; /*correção*/
+  margin-top: 80px; /*correção*/
 }
 
 .table__cell_theme_dark {
