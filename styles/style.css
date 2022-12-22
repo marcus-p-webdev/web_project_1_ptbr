@@ -14,7 +14,7 @@
 }
 
 .logo_place_header {
-  position: absolute;
+  position: absolute; /*correção*/
   width: 154px;
   height: 31px;
   top: 30px;
@@ -37,6 +37,7 @@
   font-size: 102px;
   font-weight: bold;
   margin-left: 64px;
+  align-self: center;
 }
 
 .header__subtitle {
@@ -51,7 +52,8 @@
 }
 
 .header__link {
-  text-decoration: #2F80ED;
+  display: flex;
+  color: #2F80ED;
   /*qual display?*/
 }
 
@@ -78,6 +80,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
   /* margin */
 }
 
