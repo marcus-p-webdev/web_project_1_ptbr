@@ -294,7 +294,6 @@
   margin: auto;
   width: 90%;
   min-height: 350px;
-  border: 1px solid white;
 }
 
 .footer__column_content_copyright {
@@ -306,12 +305,15 @@
 .footer__column_content_about {
   display: flex;
   position: relative;
+  flex-direction: column;
   row-gap: 20px;
-  border: 1px solid white;
 }
 
 .footer__column_content_social {
-  border: 1px solid white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .logo_place_footer {
@@ -329,6 +331,7 @@
 }
 
 .footer__column-heading {
+  display: flex;
   color: white;
   line-height: 30px;
   font-size: 18px;
@@ -339,13 +342,20 @@
   color: white;
   line-height: 30px;
   font-size: 18px;
+  padding: 0px;
+  list-style-type: none;
   font-weight: normal;
 }
 
 .footer__column-link {
-
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 .footer__social-icons {
-
+  width: 16px;
+  height: 16px;
+  padding-right: 10px;
 }
