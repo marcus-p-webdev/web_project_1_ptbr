@@ -10,55 +10,51 @@
 }
 
 .logo {
-/*  position: absolute; "esta propriedade é exclusiva da logo_place_header" */
   z-index: 1;
 }
 
 .logo_place_header {
-  position: absolute; /*correção*/
-  width: 154px; /*correção*/
-  height: 31px; /*correção*/
+  position: absolute;
+  width: 154px;
+  height: 31px;
   top: 30px;
   left: 64px;
 }
 
 .header {
-  overflow: auto;
+  overflow: hidden;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   position: relative;
   display: flex;
-/*  align-items: center; "remova esta propriedade" */
   background-color: #F2F2F2;
 }
 
 .header__title {
-  align-self: center; /*correção*/
+  align-self: center;
   width: 730px;
-/*  height: 96px; "remova esta propriedade" */
   font-size: 102px;
   font-weight: bold;
   margin-left: 64px;
-  margin-top: 0px; /*correção*/
-  margin-bottom: 0px; /*correção*/
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .header__subtitle {
   position: absolute;
   width: 388px;
-/*  height: 25px; "remova esta propriedade" */
   font-size: 18px;
   font-weight: normal;
   bottom: 30px;
   left: 64px;
-  margin-top: 0px; /*correção*/
-  margin-bottom: 0px; /*correção*/
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .header__link {
-  display: flex; /*correção*/
-/* qual valor de text-decoration? */
+  display: flex;
+  text-decoration: none;
   color: #2F80ED;
 }
 
@@ -83,22 +79,20 @@
 
 .description {
   display: flex;
-  justify-content: center; /*é este mesmo o valor?*/
-  align-items: center; /*correção*/
-  margin: 100px auto 100px auto; /*correção*/
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
 }
 
 .two-columns {
   display: flex;
-/*  position: relative;
-  margin: 100px auto 100px auto; "esta classe não recebe as propriedades position e margin" */
   justify-content: space-between;
   width: 80%;
 }
 
 .two-columns__brief {
   width: 175px;
-  margin: 0px 0px 0px 0px; /*correção*/
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -106,20 +100,19 @@
 }
 
 .two-columns__main-text {
-  display: flex; /*correção*/
-  flex-direction: column; /* flex direction para column, certo? */
-  gap: 20px; /* gap ou column-gap? */
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
   width: 80%;
   min-width: 784px;
   text-indent: 0px;
-  /* "esta classe não recebe a propriedade text-align, será que se refere ao text-indent? */
 }
 
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0px 0px 0px 0px; /* "todas as margens devem ser 0" */
+  margin: 0;
 }
 
 .two-columns__span-accent {
@@ -131,10 +124,6 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
-/*  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  margin-top: 100px; "esta classe não receve estas propriedades" */
 }
 
 .section-title {
@@ -144,7 +133,7 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 0px; /*correção*/
+  margin-top: 0px;
 }
 
 .section-subtitle {
@@ -158,19 +147,15 @@
 
 .table {
   display: flex;
-/*  position: relative; "remova esta propriedade" */
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0px 0px 0px 0px; /*correção*/
+  padding: 0;
   margin: 60px 0px 0px 0px;
   width: 1100px;
-  row-gap: 20px;
+  row-gap: 60px;
 }
 
 .table__cell {
-  margin-bottom: 60px; /* adicionei novamente esta propriedade pois os elementos não estavam
-  afastados como na página do briefing */
-/*  height: auto; "esta classe não recebe margin-bottom e height" */
   width: 250px;
   list-style-type: none;
 }
@@ -180,18 +165,14 @@
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 20px;
-  margin: 0px 0px 0px 0px; /*correção*/
+  margin: 20px 0 0;
 }
 
 .cell__text {
-  margin: 0px 0px 0px 0px; /*correção*/
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.cell__text_span-accent { /*não sei se devia, mas só consegui fazer deste jeito*/
-  margin-top: 20px;
 }
 
 .feynman {
@@ -211,22 +192,21 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  margin-top: 0px;
+  margin-top: 100px;
   margin-bottom: 70px;
-/*  top: 100px; "remova esta propriedade" */
 }
 
 .feynman__subtitle {
   height: 51px;
   font-size: 36px;
   font-weight: normal;
-/*  top: 170px; "remova esta propriedade" */
+  margin: 0;
   text-align: center;
 }
 
 .feynman__link {
   color: #2F80ED;
-/*  text-decoration --qual o valor?-- */
+  text-decoration: none;
   position: absolute;
   top: 50%;
   right:48px;
@@ -254,68 +234,37 @@
   flex-direction: column;
   padding-top: 90px;
   padding-bottom: 90px;
-/*  margin-top: 100px; "remova esta propriedade" */
   overflow: hidden;
   background-color: #1F1F1F;
 }
 
 .section-title_theme_dark {
   color: white;
-/*  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 0px; "esta classe receve apenas a propriedade color" */
 }
 
 .section-subtitle_theme_dark {
   color: white;
-/*  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 0px; "esta classe receve apenas a propriedade color" */
 }
 
 .table_theme_dark {
-/*  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1100px;
-  margin: 0 auto 90px auto; "esta classe propriedade recebe apenas as propriedades
-  row-gap e margin-top" */
-  row-gap: 20px; /*correção*/
-  margin-top: 80px; /*correção*/
+  margin-top: 80px;
+  row-gap: 80px;
 }
 
 .table__cell_theme_dark {
   width: 200px;
-/*  color: white;
-  margin-right: 0;
-  margin-top: 80px; "esta classe não recebe estas propriedades" */
   list-style-type: none;
   z-index: 1;
 }
 
 .table__heading_theme_dark {
-/*  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0 auto auto 0; "esta classe apenas recebe as propriedades color e z-index (--pq z-index?--)*/
   color: white;
-  z-index: 1; /*correção*/
+  z-index: 1;
 }
 
 .table__text_theme_dark {
-/*  margin: 20px auto 0px auto;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal; "esta classe recebe apenas as propriedades color e z-index" */
   color: white;
-  z-index: 1; /*correção*/
+  z-index: 1;
 }
 
 .kaufman__triangle {
@@ -328,13 +277,13 @@
 }
 
 .footer {
-  display: flex; /*correção*/
-  justify-content: center; /* --é este mesmo o valor?-- */
+  display: flex;
+  justify-content: center;
   background-color: black;
-/*  margin-top: 100px; "remova esta propriedade" */
-  padding-top: 60px; /*correção*/
-  padding-bottom: 40px; /*correção*/
-  min-height: 350px; /* --isto que quis dizer com box-sizing ou quer dizer a propriedade?-- */
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-height: 350px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
