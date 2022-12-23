@@ -142,7 +142,7 @@
   font-size: 24px;
   font-weight: normal;
   text-align: center;
-  margin: 0px 0px 0px 0px; /* "todas as margens devem ser 0" */
+  margin: 0;
 }
 
 .table {
@@ -169,7 +169,7 @@
 }
 
 .cell__text {
-  margin: 0;
+  margin: 20px 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -273,7 +273,7 @@
   width: 660px;
   height: 636px;
   right: -124px;
-  top: 0px; /*correção*/
+  top: 0px;
 }
 
 .footer {
@@ -289,35 +289,24 @@
 .footer__columns {
   display: flex;
   justify-content: space-between;
-/*  margin: auto; esta classe não receve esta propriedade */
   width: 90%;
-/*  min-height: 350px; foi para o footer */
 }
 
-/* nova classe, acabei não me atentando ao elemento e apenas criei uma classe já com o modificador */
 .footer__column {
   display: flex;
   flex-direction: column;
 }
 
 .footer__column_content_copyright {
-/*  display: flex;
-  position: relative; "esta classe não recebe estas propriedades" */
-  justify-content: space-between; /*correção*/
+  justify-content: space-between;
   flex-basis: 711px;
 }
 
 .footer__column_content_about {
-/*  display: flex;
-  position: relative;
-  flex-direction: column; "remover estas propriedades" */
   row-gap: 20px;
 }
 
 .footer__column_content_social {
-/*  display: flex;
-  position: relative;
-  flex-direction: column; "remover estas propriedades" */
   row-gap: 20px;
 }
 
@@ -327,30 +316,23 @@
 }
 
 .footer__author {
-/*  position: absolute;
-  bottom: 18px; "não recebe estas propriedades" */
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   color: white;
-/*  margin-top: 18px; */
   margin-bottom: 18px;
 }
 
 .footer__column-heading {
-/*  display: flex; "remover esta propriedades" */
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  margin: 0px 0px 0px 0px; /*correção*/
+  margin: 0;
 }
 
 .footer__list {
-/*  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal; "remover estas propriedades" */
-  padding: 0px;
+  padding: 0;
   list-style-type: none;
   color: white;
 }
@@ -360,7 +342,7 @@
   font-size: 18px;
   text-decoration: none;
   text-decoration-color: white;
-  color: white; /*correção*/
+  color: white;
 }
 
 .footer__social-icons {
