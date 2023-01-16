@@ -1,0 +1,5 @@
+.header__link {
+  display: flex;
+  text-decoration: none;
+  color: #2F80ED;
+}
