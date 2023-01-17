@@ -15,4 +15,5 @@
   right: -124px;
   top: 0px;
   animation: rotation 20s linear infinite;
+  z-index: -1;
 }
