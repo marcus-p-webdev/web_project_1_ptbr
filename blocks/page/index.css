@@ -41,9 +41,9 @@
 @import url(../table/__title/table__title.css);
 @import url(../table/__cell/_theme/table__cell_theme.css);
 @import url(../table/__heading/table__heading.css);
-@import url(../table/__heading/_theme/table__heading_theme.css);
+@import url(../table/__heading/_theme/table__heading_theme_dark.css);
 @import url(../table/__text/table__text.css);
-@import url(../table/__text/_theme/table__text_theme.css);
+@import url(../table/__text/_theme/table__text_theme_dark.css);
 @import url(../table/_theme/table_theme.css);
 @import url(../two-columns/two-columns.css);
 @import url(../two-columns/__brief/two-columns__brief.css);
