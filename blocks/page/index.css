@@ -26,8 +26,8 @@
 @import url(../kaufman/kaufman.css);
 @import url(../kaufman/__triangle/kaufman__triangle.css);
 @import url(../logo/logo.css);
-@import url(../logo/_place_footer/logo_place_footer.css);
-@import url(../logo/_place_header/logo_place_header.css);
+@import url(../logo/_place/logo_place_footer.css);
+@import url(../logo/_place/logo_place_header.css);
 @import url(../section-subtitle/section-subtitle.css);
 @import url(../section-subtitle/_theme/section-subtitle_theme.css);
 @import url(../section-title/section-title.css);
@@ -35,7 +35,6 @@
 @import url(../table/table.css);
 @import url(../table/__cell/table__cell.css);
 @import url(../table/__text/table__text.css);
-/*@import url(../table/__title/table__title.css);*/
 @import url(../table/__cell/_theme/table__cell_theme_dark.css);
 @import url(../table/__heading/table__heading.css);
 @import url(../table/__heading/_theme/table__heading_theme_dark.css);
