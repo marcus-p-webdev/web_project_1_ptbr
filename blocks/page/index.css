@@ -57,6 +57,7 @@
 @import url(../video/video.css);
 @import url(../video/__iframes/video__iframes.css);
 @import url(../video/__iframe/video__iframe.css);
+@import url(../two-columns/_theme/two-columns_theme_gray.css);
 
 .page {
   min-width: 1100px;
