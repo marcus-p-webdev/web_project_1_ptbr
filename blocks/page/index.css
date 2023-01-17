@@ -1,6 +1,6 @@
-@import url(../cell/cell.css);
+/*@import url(../cell/cell.css);
 @import url(../cell/__text/cell__text.css);
-@import url(../cell/__title/cell__title.css);
+@import url(../cell/__title/cell__title.css);*/
 @import url(../content/content.css);
 @import url(../description/description.css);
 @import url(../digits/digits.css);
@@ -37,6 +37,8 @@
 @import url(../section-title/_theme/section-title_theme.css);
 @import url(../table/table.css);
 @import url(../table/__cell/table__cell.css);
+@import url(../table/__text/table__text.css);
+@import url(../table/__title/table__title.css);
 @import url(../table/__cell/_theme/table__cell_theme.css);
 @import url(../table/__heading/table__heading.css);
 @import url(../table/__heading/_theme/table__heading_theme.css);
